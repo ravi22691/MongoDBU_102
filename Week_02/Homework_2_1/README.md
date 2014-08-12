@@ -18,7 +18,7 @@ mongo --shell pcat homework2.js
 First, make a mini-backup of the collection before we start modifying it. In the shell:
 ```
 b = db.products_bak; db.products.find().forEach( function(o){ b.insert(o) } )
- // check it worked: 
+ // check it worked:
 b.count()
 // should print 11
 ``` 
@@ -29,6 +29,7 @@ homework.a()
 ```
 
 What is the output? (The above will check that products_bak is populated.)
----- 
+
+----
 
 3.05

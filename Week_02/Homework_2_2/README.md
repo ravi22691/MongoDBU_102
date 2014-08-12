@@ -33,6 +33,4 @@ myobj.limits.sms.over_rate = 0.01
 db.products.save(myobj)
 ```
 
-```
 0.050.019031
-```

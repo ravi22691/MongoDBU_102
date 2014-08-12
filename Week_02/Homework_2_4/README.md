@@ -8,11 +8,15 @@ After creating the index, query products that work with an "ac3" phone; that is,
 * Q2: Run an explain plan on the above query. How many records were scanned?
 * Q3: Was an index used?
 
+----
+
 ```
 db.products.ensureIndex({for:1})
 db.products.find({for:"ac3"}).count()
-> 4
-db.products.find({for:"ac3"}).explain()
-> 4
-> Yes
 ```
+4
+```
+db.products.find({for:"ac3"}).explain()
+```
+4  
+Yes
