@@ -1,6 +1,6 @@
 We will use the pcat.products collection from week 1. So start with that; if not already set up, import it:
 ```
-    mongoimport --db pcat -c products < products.json
+mongoimport --db pcat -c products < products.json
 ```
 
 You can find products.json from the Download Handouts link. In the shell, if you type:
@@ -28,8 +28,7 @@ If you have any issues you can restore from "products_bak"; or, you can re-impor
 homework.a()
 ```
 
+What is the output? (The above will check that products_bak is populated.)
 ---- 
 
-```
-
-```
+3.05

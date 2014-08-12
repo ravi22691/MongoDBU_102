@@ -2,8 +2,12 @@ Download and install MongoDB from www.mongodb.org. Then run the database as a si
 
 From the shell prompt type
 
- db.isMaster().maxBsonObjectSize
+	db.isMaster().maxBsonObjectSize
 
 at the ">" prompt. 
 
-> 16777216
+What do you get as a result?
+
+----
+
+16777216
