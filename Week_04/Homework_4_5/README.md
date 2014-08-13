@@ -5,20 +5,21 @@ To get the right answer on this problem, you must perform the homework questions
 Go to the secondary in the replica set. The shell should say SECONDARY at the prompt if you've done everything correctly.
 
 Switch to the local database and then look at the oplog:
-
-> db.oplog.rs.find()
-
+```
+db.oplog.rs.find()
+```
 If you get a blank result, you are not on the right database.
 
 Note: as the local database doesn’t replicate, it will let you query it without entering “rs.slaveOk()” first.
 
 Next look at the stats on the oplog to get a feel for its size:
-
-> db.oplog.rs.stats()
-
+```
+db.oplog.rs.stats()
+```
 What result does this expression give when evaluated?
-
+```
 db.oplog.rs.find().sort({$natural:1}).limit(1).next().o.msg[0]
+```
 
 ----
 
