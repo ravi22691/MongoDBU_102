@@ -8,5 +8,5 @@ Check all that apply.
 
 ----
 
-* Add an arbiter.
+* Add two data bearing members plus one arbiter.
 * Add another data bearing node. 
